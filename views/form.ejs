@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-content write-blog">
+    <form action="/post" method="POST" class="p-5 shadow  bg-body-light rounded">
+        <h1 class="fs-1 fw-semibold text-center mb-5">Write a Blog</h1>
+        <div class="mb-3">
+            <textarea type="text" class="form-control" size="50" id="exampleFormControlTextarea1" name="blog" placeholder="Start Writing..." required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-medium">Name of author</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"  name="name" placeholder="e.g.Tom young" required>
+        </div>
+        <div class="mb-3 text-center">
+            <input class="btn btn-dark" type="submit" value="Submit">
+        </div>
+    </form>
+    </div>
+
+<%- include("partials/footer.ejs") %>

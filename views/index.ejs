@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-content blogs">
+    <% blogs.slice().reverse().forEach((a)=>{ %>
+    <div class="blog shadow  bg-body-light rounded ">
+        <p><%= a.blog %></p>
+        <div class="fw-light">- <%= a.name %></div>
+    </div>
+    <% }) %>
+</div>
+
+<%- include("partials/footer.ejs") %>
