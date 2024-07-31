@@ -1,3 +1,3 @@
 cd to directory
-npm install
+npm  install
 nodemon index.js
